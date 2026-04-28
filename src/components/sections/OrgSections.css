@@ -233,7 +233,7 @@
 
 .org-nakawe-heading {
   position: static;
-  width: min(860px, 100%);
+  width: min(960px, 100%);
   margin: 0 auto 0 0;
   font-size: 2.1rem;
   line-height: 1;
@@ -242,9 +242,9 @@
 
 .org-section-nakawe .org-image-wrapper {
   margin-left: calc(-1 * max(2rem, (100vw - 1200px) / 2 + 2rem));
-  width: calc(min(860px, 100%) + max(2rem, (100vw - 1200px) / 2 + 2rem));
+  width: calc(min(960px, 100%) + max(2rem, (100vw - 1200px) / 2 + 2rem));
   margin-right: auto;
-  height: 300px;
+  height: 330px;
   border-radius: 18px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
