@@ -1,0 +1,120 @@
+.campamento-section {
+  background-color: white; /* Behind the first curve */
+  position: relative;
+}
+
+.campamento-curved-top {
+  width: 100%;
+  line-height: 0;
+  margin-bottom: -1px; /* Prevents tiny gap */
+}
+
+.campamento-content {
+  background-color: var(--color-green);
+  padding: 20px 0 80px 0;
+}
+
+.campamento-title {
+  text-align: center;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.campamento-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.campamento-map-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  height: 300px;
+}
+
+.campamento-map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-marker {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  animation: markerBounce 2s infinite;
+}
+
+@keyframes markerBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.campamento-info-card {
+  background-color: var(--color-sand);
+  border-radius: 20px;
+  padding: 40px 30px;
+  color: var(--color-primary-dark);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.camp-info-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.camp-info-desc {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.video-route-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: none;
+  border: none;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: left;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.video-route-btn:hover {
+  opacity: 0.8;
+}
+
+.play-icon {
+  background-color: #026e99;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.video-route-btn:hover .play-icon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .campamento-grid {
+    grid-template-columns: 1fr;
+  }
+}

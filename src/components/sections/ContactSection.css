@@ -1,0 +1,95 @@
+.contact-section {
+  background-color: var(--color-primary);
+  padding: 80px 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-group {
+  margin: 10px 0 30px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.9;
+  line-height: 1.4;
+  padding-left: 28px;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+  border-color: white;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-label .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
