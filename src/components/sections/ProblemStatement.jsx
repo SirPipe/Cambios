@@ -5,7 +5,7 @@ import './ProblemStatement.css';
 const ProblemStatement = () => {
   return (
     <section className="problem-section" id="quienes-somos">
-      <div className="problem-background" style={{ backgroundImage: 'url(/bg-TurtlePrincipal.png)' }}>
+      <div className="problem-background" style={{ backgroundImage: 'url(/tort1.png)' }}>
         <div className="problem-overlay"></div>
       </div>
       
