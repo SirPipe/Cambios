@@ -171,9 +171,11 @@
 }
 
 .org-section-cambiando .org-logo-icon svg {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 8px;
+  width: 142px;
+  height: auto;
+  color: var(--color-primary-dark);
+  display: block;
+  margin-bottom: 0;
 }
 
 .org-section-cambiando .org-subtitle {
