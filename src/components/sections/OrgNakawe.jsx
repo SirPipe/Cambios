@@ -13,7 +13,7 @@ const OrgNakawe = () => {
         </div>
         <div className="org-content org-content-right">
           <div className="org-brand">
-            <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2362 2362" style={{ width: '100%', maxWidth: '320px', height: 'auto', marginBottom: '0' }} fill="#000000">
+            <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2362 2362" className="org-nakawe-vector" fill="currentColor">
               <g>
                 <g>
                   <path d="M1157.38,469.32c16.41-1.41,34.21,4.48,45.43,16.7-15.48,23.58-63.27,31.32-82.16,9.65-5.17-5.93.73-10.03,6.25-14.41,8.17-6.5,20.1-11.05,30.48-11.94ZM1168.28,489.42c0-4.82-3.9-8.72-8.72-8.72s-8.72,3.9-8.72,8.72,3.9,8.72,8.72,8.72,8.72-3.9,8.72-8.72Z"/>
