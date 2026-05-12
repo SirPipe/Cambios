@@ -36,11 +36,16 @@
 }
 
 .hero-title {
-  font-size: 5rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+  width: min(640px, 88vw);
   margin-bottom: 20px;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+.hero-title-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.36));
 }
 
 .hero-subtitle {
@@ -93,7 +98,7 @@
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 3.5rem;
+    width: min(430px, 90vw);
   }
   .hero-subtitle {
     font-size: 1.2rem;

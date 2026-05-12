@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../ui/Button';
+import MapaVerdeTitle from '../ui/MapaVerdeTitle';
 import { HeroWaves } from './WavesDecoration';
 import { Search, ArrowDown } from 'lucide-react';
 import './HeroSection.css';
@@ -16,7 +17,9 @@ const HeroSection = () => {
       </div>
       
       <div className="container hero-content">
-        <h1 className="hero-title">Mapa Verde</h1>
+        <h1 className="hero-title" aria-label="Mapa Verde">
+          <MapaVerdeTitle className="hero-title-svg" aria-hidden="true" />
+        </h1>
         <p className="hero-subtitle">
           Conoce los negocios que ya están generando un <strong>cambio en la costa</strong>.
         </p>
